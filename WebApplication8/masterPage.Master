@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage.master.cs" Inherits="WebApplication8.masterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 372px;
+        }
+        .auto-style3 {
+            width: 1316px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <table class="auto-style1">
+            <tr>
+                <td style="background-color: #99CCFF" class="auto-style3">Usability Management System</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <table class="auto-style1">
+                        <tr>
+                            <td class="auto-style2" style="vertical-align: middle; text-align: center; background-color: #FFFFFF; margin-left: 40px;">
+                                <br />
+                                <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Stencil" Font-Size="X-Large" ForeColor="#666666" StaticSubMenuIndent="10px">
+                                    <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                    <DynamicMenuStyle BackColor="#E3EAEB" />
+                                    <DynamicSelectedStyle BackColor="#1C5E55" />
+                                    <Items>
+                                        <asp:MenuItem Text="UET Test" Value="UET TEst">
+                                            <asp:MenuItem Text="Project" Value="Add Project">
+                                                <asp:MenuItem NavigateUrl="~/add_project.aspx" Text="Add project" Value="Add project"></asp:MenuItem>
+                                                <asp:MenuItem NavigateUrl="~/editProject.aspx" Text="Edit Project" Value="Edit Project"></asp:MenuItem>
+                                                <asp:MenuItem Text="Checklist" Value="Checklist" NavigateUrl="~/checklist.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="List of Projects" Value="List of Projects" NavigateUrl="~/ListOfProject.aspx"></asp:MenuItem>
+                                            </asp:MenuItem>
+                                        </asp:MenuItem>
+                                        <asp:MenuItem Text="Heuristic way" Value="Heuristic way"></asp:MenuItem>
+                                        <asp:MenuItem Text="About" Value="About"></asp:MenuItem>
+                                    </Items>
+                                    <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                    <StaticSelectedStyle BackColor="#1C5E55" />
+                                </asp:Menu>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+        <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br /></td>
+                            <td>This region includes project details.</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">UMS.2014</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
